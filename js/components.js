@@ -39,6 +39,7 @@ class MyLegend extends HTMLElement {
             <select id="legend_select">
               <option value="temp">Temperatura</option>
               <option value="moist">Moisture</option>
+              <option value="both">Both</option>
             </select>
             <div>
                 <span id="legend_degrade" class="degrade_temp"></span>

@@ -45,9 +45,11 @@ window.onload = function () {
 function switchMode() {
     if (darkemode_toggle.checked) {
         document.body.classList.add('darkMode');
+        document.getElementById("logo_company").src = "./assets/img/logo/white_logo_esoeste.png";
     }
     else {
         document.body.classList.remove('darkMode');
+        document.getElementById("logo_company").src = "./assets/img/logo/logo_esoeste.png";
     }
 }
 

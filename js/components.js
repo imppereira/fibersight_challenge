@@ -1,4 +1,4 @@
-//   COMPONENT BUTTON
+// COMPONENT BUTTON
 class MyButton extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -11,7 +11,7 @@ class MyButton extends HTMLElement {
 }
 customElements.define('my-button', MyButton);
 
-//   COMPONENT LIGHT/DARK MODE SWITCH
+// COMPONENT LIGHT/DARK MODE SWITCH
 class MySwitch extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -31,6 +31,20 @@ class MySwitch extends HTMLElement {
 }
 customElements.define('my-switch', MySwitch);
 
+// COMPONENT ZOOM
+class MyZoom extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+         <div id="cc_zoom">
+                <p>Zoom</p>
+                <button class="button_zoom">+</button>
+                <button class="button_zoom">-</button>
+              </div>
+          `;
+    }
+}
+customElements.define('my-zoom', MyZoom);
+
 // COMPONENT SLIDER
 class MySlider extends HTMLElement {
     connectedCallback() {
@@ -44,7 +58,7 @@ class MySlider extends HTMLElement {
 }
 customElements.define('my-slider', MySlider);
 
-//   COMPONENT LEGEND
+// COMPONENT LEGEND
 class MyLegend extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -55,7 +69,7 @@ class MyLegend extends HTMLElement {
               <option value="both">Both</option>
             </select>
             <div id="temp_legend">
-                <p class="text_legend">Temperature</p>
+                <p id="text_temp" class="text_legend">Temperature</p>
                 <span id="legend_degrade" class="degrade_temp"></span>
                 <div id="cc_legend_min_max">
                     <p id="legend_min">5ºC</p>
@@ -63,7 +77,7 @@ class MyLegend extends HTMLElement {
                 </div>
             </div>
              <div id="moist_legend">
-                <p class="text_legend">Moisture</p>
+                <p id="text_moist" class="text_legend">Moisture</p>
                 <span id="legend_degrade" class="degrade_moist"></span>
                 <div id="cc_legend_min_max">
                     <p id="legend_min">2%</p>

@@ -39,7 +39,7 @@ header {
 }
 
 #logo_company {
-    width: 124px;
+    width: 140px;
     height: auto;
 }
 
@@ -65,9 +65,10 @@ main {
     padding: 16px 24px;
     /* LAYOUT */
     flex: 11 1 auto;
+
 }
 
-.visualization {
+.cc_index {
     width: 100%;
     height: 100%;
     /* LAYOUT */
@@ -75,4 +76,29 @@ main {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    position: relative;
+}
+
+#industry_image {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/image_farm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    /* LAYOUT */
+    position: absolute;
+}
+
+#visualization {
+    /* LAYOUT */
+    height: 550px;
+    position: absolute;
+}
+
+#cc_info_vis {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }

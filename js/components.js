@@ -31,6 +31,19 @@ class MySwitch extends HTMLElement {
 }
 customElements.define('my-switch', MySwitch);
 
+// COMPONENT SLIDER
+class MySlider extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            <div id="cc_slider">
+                <p>Image Opacity:</p>
+                <input type="range" min="1" max="100" value="50" class="input_slider">
+            </div>
+          `;
+    }
+}
+customElements.define('my-slider', MySlider);
+
 //   COMPONENT LEGEND
 class MyLegend extends HTMLElement {
     connectedCallback() {
@@ -41,11 +54,20 @@ class MyLegend extends HTMLElement {
               <option value="moist">Moisture</option>
               <option value="both">Both</option>
             </select>
-            <div>
+            <div id="temp_legend">
+                <p class="text_legend">Temperature</p>
                 <span id="legend_degrade" class="degrade_temp"></span>
                 <div id="cc_legend_min_max">
                     <p id="legend_min">5ºC</p>
                     <p id="legend_max">20ºC</p>
+                </div>
+            </div>
+             <div id="moist_legend">
+                <p class="text_legend">Moisture</p>
+                <span id="legend_degrade" class="degrade_moist"></span>
+                <div id="cc_legend_min_max">
+                    <p id="legend_min">2%</p>
+                    <p id="legend_max">10%</p>
                 </div>
             </div>
         </div>

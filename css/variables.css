@@ -28,7 +28,7 @@
     --color-background: var(--color-lightGreen);
     --color-primary: var(--color-darkGreen);
     --color-secondary: var(--color-sage);
-    --color-shadow: var(--color-purple-50);
+    --color-shadow: var(--color-darkGreen-50);
 }
 
 .darkMode {

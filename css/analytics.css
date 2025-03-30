@@ -1,0 +1,30 @@
+/* VIS ANALYTICS */
+#visAnalytics {
+    z-index: 10;
+}
+
+/* LEGEND */
+#cc_info_vis {
+    width: calc(100% - 48px);
+    /*     height: calc(100% - 32px); */
+    padding: 16px 24px;
+
+    /* LAYOUT */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 24px;
+    z-index: 0;
+}
+
+#moist_legend {
+    display: flex;
+}
+
+.text_legend {
+    display: block;
+}

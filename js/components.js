@@ -64,7 +64,7 @@ class MyLegend extends HTMLElement {
         this.innerHTML = `
         <div id="cc_legend">
             <select id="legend_select">
-              <option value="temp">Temperatura</option>
+              <option value="temp">Temperature</option>
               <option value="moist">Moisture</option>
               <option value="both">Both</option>
             </select>
@@ -72,16 +72,16 @@ class MyLegend extends HTMLElement {
                 <p id="text_temp" class="text_legend">Temperature</p>
                 <span id="legend_degrade" class="degrade_temp"></span>
                 <div id="cc_legend_min_max">
-                    <p id="legend_min">5ºC</p>
-                    <p id="legend_max">20ºC</p>
+                    <p id="legend_min_t">5ºC</p>
+                    <p id="legend_max_t">30ºC</p>
                 </div>
             </div>
              <div id="moist_legend">
                 <p id="text_moist" class="text_legend">Moisture</p>
                 <span id="legend_degrade" class="degrade_moist"></span>
                 <div id="cc_legend_min_max">
-                    <p id="legend_min">2%</p>
-                    <p id="legend_max">10%</p>
+                    <p id="legend_min_m">2%</p>
+                    <p id="legend_max_m">30%</p>
                 </div>
             </div>
         </div>

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/analytics.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,10 @@
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <title>Document</title>
+    <!--D3.js-->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <title>FiberSight Challenge</title>
 </head>
 
 <body class="lightMode">
@@ -39,15 +43,35 @@
     </header>
 
     <main>
-        <span class="analytics">
-   
-        </span>
-        
+        <div id="cc_analytics">
+            <svg id="visAnalytics"></svg>
+            <div id="cc_info_vis">
+                <div id="cc_legend">
+                    <div id="temp_legend">
+                        <p id="text_temp" class="text_legend">Temperature</p>
+                        <span id="legend_degrade" class="degrade_temp"></span>
+                        <div id="cc_legend_min_max">
+                            <p id="legend_min_t">5ºC</p>
+                            <p id="legend_max_t">30ºC</p>
+                        </div>
+                    </div>
+                    <div id="moist_legend">
+                        <p id="text_moist" class="text_legend">Moisture</p>
+                        <span id="legend_degrade" class="degrade_moist"></span>
+                        <div id="cc_legend_min_max">
+                            <p id="legend_min_m">2%</p>
+                            <p id="legend_max_m">30%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </span>
     </main>
 
 </body>
 
 <script src="js/components.js"></script>
 <script src="js/general.js"></script>
+<script src="js/data.js"></script>
 
 </html>
